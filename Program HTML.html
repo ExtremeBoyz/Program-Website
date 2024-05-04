@@ -114,6 +114,21 @@ nav ul li a:hover {
     margin-bottom: 20px; /* Add some bottom margin */
     padding: 20px; /* Add some padding to the text */
 }
+        body {
+            opacity: 0; /* Initially hide the body */
+            transition: opacity 0.5s ease; /* Add transition effect for opacity */
+        }
+        /* Your existing CSS styles */
+    </style>
+    <script>
+        window.onload = function() {
+            // Get the Programs link element
+            var programsLink = document.querySelector('nav ul li:nth-child(3) a');
+            // Add the active class to the Programs link
+            programsLink.classList.add('active');
+            // Show the body with transition
+            document.body.style.opacity = '1';
+        };
 
     </style>
 </head>
